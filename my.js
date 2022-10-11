@@ -14,6 +14,7 @@ function updatePrice() {
   radioDiv.style.display = (select.value == "3" ? "block" : "none");
   
   // Смотрим какая товарная опция выбрана.
+  if (select.value != "3") break;
   let radios = document.getElementsByName("prodOptions");
   radios.forEach(function(radio) {
     if (radio.checked) {
